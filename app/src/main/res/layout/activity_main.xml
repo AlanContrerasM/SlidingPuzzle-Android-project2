@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/moves_counter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moves so far:"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/moves_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toEndOf="@+id/moves_counter_title"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/buttons_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/moves_counter_title">
+
+            <ImageButton
+                android:id="@+id/photo1"
+                style="@style/photoButton"
+                android:src="@drawable/img1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:tag="0,1,1"
+                android:contentDescription="1"
+                />
+
+            <ImageButton
+                android:id="@+id/photo2"
+                style="@style/photoButton"
+                android:src="@drawable/img2"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/photo1"
+                android:tag="1,1,2"
+                android:contentDescription="2"
+                />
+
+            <ImageButton
+                android:id="@+id/photo3"
+                style="@style/photoButton"
+                android:src="@drawable/img3"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/photo2"
+                android:tag="2,1,3"
+                android:contentDescription="3"
+                />
+            <ImageButton
+                android:id="@+id/photo4"
+                style="@style/photoButton"
+                android:src="@drawable/img4"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/photo3"
+                android:tag="3,1,4"
+                android:contentDescription="4"
+                />
+
+            <ImageButton
+                android:id="@+id/photo5"
+                style="@style/photoButton"
+                android:src="@drawable/img5"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/photo1"
+                android:tag="4,2,1"
+                android:contentDescription="5"
+                />
+
+            <ImageButton
+                android:id="@+id/photo6"
+                style="@style/photoButton"
+                android:src="@drawable/img6"
+                android:layout_below="@+id/photo1"
+                android:layout_toEndOf="@+id/photo5"
+                android:tag="5,2,2"
+                android:contentDescription="6"
+                />
+            <ImageButton
+                android:id="@+id/photo7"
+                style="@style/photoButton"
+                android:src="@drawable/img7"
+                android:layout_below="@+id/photo1"
+                android:layout_toEndOf="@+id/photo6"
+                android:tag="6,2,3"
+                android:contentDescription="7"
+                />
+            <ImageButton
+                android:id="@+id/photo8"
+                style="@style/photoButton"
+                android:src="@drawable/img8"
+                android:layout_below="@+id/photo1"
+                android:layout_toEndOf="@+id/photo7"
+                android:tag="7,2,4"
+                android:contentDescription="8"
+                />
+
+            <ImageButton
+                android:id="@+id/photo9"
+                style="@style/photoButton"
+                android:src="@drawable/img9"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/photo5"
+                android:tag="8,3,1"
+                android:contentDescription="9"
+                />
+
+            <ImageButton
+                android:id="@+id/photo10"
+                style="@style/photoButton"
+                android:src="@drawable/img10"
+                android:layout_below="@+id/photo5"
+                android:layout_toEndOf="@+id/photo9"
+                android:tag="9,3,2"
+                android:contentDescription="10"
+                />
+            <ImageButton
+                android:id="@+id/photo11"
+                style="@style/photoButton"
+                android:src="@drawable/img11"
+                android:layout_below="@+id/photo5"
+                android:layout_toEndOf="@+id/photo10"
+                android:tag="10,3,3"
+                android:contentDescription="11"
+                />
+            <ImageButton
+                android:id="@+id/photo12"
+                style="@style/photoButton"
+                android:src="@drawable/img12"
+                android:layout_below="@+id/photo5"
+                android:layout_toEndOf="@+id/photo11"
+                android:tag="11,3,4"
+                android:contentDescription="12"
+                />
+
+
+            <ImageButton
+                android:id="@+id/photo13"
+                style="@style/photoButton"
+                android:src="@drawable/img13"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/photo9"
+                android:tag="12,4,1"
+                android:contentDescription="13"
+                />
+
+            <ImageButton
+                android:id="@+id/photo14"
+                style="@style/photoButton"
+                android:src="@drawable/img14"
+                android:layout_below="@+id/photo9"
+                android:layout_toEndOf="@+id/photo13"
+                android:tag="13,4,2"
+                android:contentDescription="14"
+                />
+            <ImageButton
+                android:id="@+id/photo15"
+                style="@style/photoButton"
+                android:src="@drawable/img15"
+                android:layout_below="@+id/photo9"
+                android:layout_toEndOf="@+id/photo14"
+                android:tag="14,4,3"
+                android:contentDescription="15"
+                />
+            <ImageButton
+                android:id="@+id/photo16"
+                style="@style/photoButton"
+                android:src="@drawable/blank"
+                android:layout_below="@+id/photo9"
+                android:layout_toEndOf="@+id/photo15"
+                android:tag="15,4,4"
+                android:contentDescription="16"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/new_puzzle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Puzzle"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttons_group"
+            android:enabled="true"
+            android:onClick="newPuzzle"
+            />
+        <Button
+            android:id="@+id/solve_puzzle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solve Puzzle"
+            android:layout_alignParentRight="true"
+            android:onClick="solvePuzzle"
+            android:layout_below="@+id/buttons_group"
+            android:enabled="false"/>
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:layout_below="@id/new_puzzle_button"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
